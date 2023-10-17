@@ -1,0 +1,18 @@
+.mood {
+    &__truck--image {
+        background-image: url('../../assets/images/basic-truck-gray.png');
+        min-height: 460px;
+    }
+
+    &__reason {
+        margin-right: theme('spacing.1');
+    }
+
+    &__survey-wrapper {
+        @media screen and (min-width: 768px) {
+            padding: theme('spacing.10');
+        }
+
+        padding: theme('spacing.2');
+    }
+}

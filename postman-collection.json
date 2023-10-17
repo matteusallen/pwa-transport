@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "73c94ae0-2ce4-4d47-9f6b-0144514fe1f1",
+		"name": "Samaritans - Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27483246"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"rev\",\r\n    \"lastName\": \"rev\",\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/register",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"password\": \"Password1.\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/login",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Force Update Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"password\": \"Password1.\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/force/password",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"force",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend Temporary Password Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/resend/temporary/password",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"resend",
+						"temporary",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/reset/password",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"reset",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"password\": \"Password3.\",\r\n    \"confirmationCode\" : \"689262\",\r\n    \"community\": \"truckyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/update/password",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"update",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"revanth@truckyu.com\",\r\n    \"community\": \"truckyu\",\r\n    \"refreshToken\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.gi77JAq2P3587yl15AE_zZ--MbF1XqwnXQHsfqL0CFv-LsoN8vxsqv4-P4HyeOq8ENzNh6e6e5etfK3V76bly45scCNY_t83oTuSOCCVP0011cTSVLMv2ukPpSkWcNZaLfoY-jmhKDDKVgC5VFH1Q1D9lAOvne2olGAxoL69B50m5XriftdKcLNuQdzYS_KZUADwGN69p-aYDbWC-S8Ql7C8HULkdUA8y31VlXV6NLvWsbqRtk2mz_o2bkhc3QNtePNdEEJkrpm6xcqw0quFC1aefsDa9pAGh_uwd-RlwuRn-E16esGUOdfpZ17_NCHa8l4pJYMSPUW6UpGyzJymbg.thl2C0nZWvIv7wSf.MBLJ-hTTmC94XjOwrMtlxTUSTgBJqglXw-yv5POr8aHuB-JJZfAofUjRv6tPZtpZBcTmWQOVbwXH02vWG98GGAHsI3G9OZFjO2CehtKultgaDZ_XAq1qJyg01dvyzTCBJd1ZtLexPgTgnKX-oeDdN4fwhRcVWisLuPhM0_LwCoOwH9aq23qZepNhDXZwL7x_iriftaD8qu-JxZbqc83BSFIhw3y_WJXdu8qEQVUsamzKp6Bq_1gZoumKFoD1NSACg-_wzMT9n7TISaYGo3fS1nUgvK2YlYfNlXfmxvytQ2Bu9DWIr85VpECPUqAYTamy0Ohz9iOW4JBZxO9xzGaH3Bymj3nySATrPN_YeluNl34HjIIKsFHefyppQC1Kc3Lg3tArWRUyFkAzwTa59IRo9z6c1sqFTWphrk6bYTp5o-PtcfM6RW_m_OG0qfgE39o846i7CJT3vnIvGWc5JxSp1pWdnYdtOjUomkUxZLkFp9YI7vX4etVvbxElLcC7n-6mPPkK9d4zXCMPMSp0jCZVEkl2wBvbpyQz4zjsrG8wTE0ZOfy3FRnnvWhT8jM0AFp6nWzQ1i9IEbtN_x5TlpQ4QZl32MOhJEX2WTz9CzXevzsYBuUDdR_tHZI8THfPhSGkoG5xCcaYsowe1ObaB2Y1ClBsn2kguBPQyTvNRT3a5BIHrxZV6we76VN17dw36crx3peaZHSUsAxJvnHO6pAHM5fl_yMMhH0h6x5FpaNs6St_C0tC8PXstt8Vycmc91O3qIKJMzZrPotBs_LQicqbUmZzgZlig4_6xnEH7ynOB8ex9nDnaHo_40rAZ4JZMhGvt2goocXL481SCzdq3QHKOJTm9Kc-Ri9ZTSa43Cbt5NAHIt6Abu_vO-nwrSBHg7HJe-0MMNfDt5QoNL4a9NAOt--OEgz1gMR6acSW9KetkGsJDB_jOgfEWHQTlwQCEowjkoSiMxEl2jKtjM-fuhTPRahCOWbF9X9kJkEcZK-b_bN1GH3UHZmxE4edonSOIiHb_qyxBJAVeQZzzUgAyce0fKJey5dCrVYuX4T2PLQ7tmv6gJAJ2icQJ9Egcgcw_ld2A3gZk5yC-_vCqngEnm_wj1ZqcXzcG_u7qJKLo4Hqvsyr_kn-UV5gMtgLG80oq-qd6YtM683_Soc76s_2ek8hdMmEvq45bm1-9CSKgsvugIP4VW_5wbtcV_eq1MNp59ihJxTq2iQfFxJ6bLtHctJ1PljJeYSsWd6Vy9Iq47g1zSJPoSZ_XD1cLBhNZlK8dxawxXOz3g8-GlLlDivVRzBnS3Ol33_Ew6MZFSyBv8YY5N38q5bTSFrjoN7WYQ.GpOtfl8LJcQDBjAo7c0gxg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/refresh/token",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"refresh",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carrier Add User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJFUGEyZ0FqN0RGNjRhQVNaRG92ZjJDZ1h4aEhtMWN1bENnQ2RxSlYyXC82ST0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOGZjNDQxMy1jNTdiLTQ0YmYtOTJiNi1lNGVmNDMxM2VhZDEiLCJjb2duaXRvOmdyb3VwcyI6WyJDQVJSSUVSIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9aYk5PVmY2cVYiLCJjb2duaXRvOnVzZXJuYW1lIjoiYThmYzQ0MTMtYzU3Yi00NGJmLTkyYjYtZTRlZjQzMTNlYWQxIiwiZ2l2ZW5fbmFtZSI6InJldiIsIm9yaWdpbl9qdGkiOiI2NDAwZDg1OS1kNGQ3LTQ2MTYtOGU3Yy02YmUzZjJhZmQzOGYiLCJhdWQiOiIzaDNxYW1xaXBqYjllaWRlZG5vYnQxMXNubCIsImV2ZW50X2lkIjoiYzJmZGJhZGEtODNhMi00NDI4LTg0MzAtOTBmMGJkYzYyOTQ3IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODczMTkyNjMsImV4cCI6MTY4NzMyMjg2MywiaWF0IjoxNjg3MzE5MjYzLCJmYW1pbHlfbmFtZSI6InJldiIsImp0aSI6IjlhNzFhM2VmLTAwMzYtNDdhOC04NjQ3LTYzYTE5YTFhNTUzYyIsImVtYWlsIjoicmV2YW50aEB0cnVja3l1LmNvbSJ9.EVCk-Mr8VzuPQbSFiNYq0pRCI7af_PxccdtSZa4QLq9aRntEcb7U7TuJ1D6HyRpFXexQ_Ou_Q_AUBgGYvzlSbbavE90_3ZdvFAQbG10RwrDs_YnXbG9fAhpk94Efc6TM3_9CnsWwSgv0p8cLU011VMQBZzyCfbi6f9nBBBZON-5g0JKzA7GJvdL4_UFK8LrgBGlDjQU9xQx6ZTwqk6aD-K_f5GX4feBt3CYaBrAliCD9BinpJnEb-Cmi3qZu3wb15LApqajr65K6jD2FpN-VgHd7uuM37uqhjJJEYorjI3YP9DxNjyBifRRDpZjGbNN-0JHYOpO7MSI3MXDQqkx8tQ",
+						"type": "text"
+					},
+					{
+						"key": "accessToken",
+						"value": "eyJraWQiOiJRRk5QN1krMWdTM24wSjlcL1lldmI4SlkwdnppalBFemVzK1ZLU0VZaW00Zz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOGZjNDQxMy1jNTdiLTQ0YmYtOTJiNi1lNGVmNDMxM2VhZDEiLCJjb2duaXRvOmdyb3VwcyI6WyJDQVJSSUVSIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX1piTk9WZjZxViIsImNsaWVudF9pZCI6IjNoM3FhbXFpcGpiOWVpZGVkbm9idDExc25sIiwib3JpZ2luX2p0aSI6IjY0MDBkODU5LWQ0ZDctNDYxNi04ZTdjLTZiZTNmMmFmZDM4ZiIsImV2ZW50X2lkIjoiYzJmZGJhZGEtODNhMi00NDI4LTg0MzAtOTBmMGJkYzYyOTQ3IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY4NzMxOTI2MywiZXhwIjoxNjg3MzIyODYzLCJpYXQiOjE2ODczMTkyNjMsImp0aSI6IjQxMDgyYTFiLTkzYWYtNDMwNi1hOGI3LTczODFhY2MzMWEyNSIsInVzZXJuYW1lIjoiYThmYzQ0MTMtYzU3Yi00NGJmLTkyYjYtZTRlZjQzMTNlYWQxIn0.L7ncJLqSkdFWJGR8kQgpe2cTbF_Q2xNAnJcSVfWifqVGc0RgLoegjBCmnbOMfj6xRxcVF-ujO4MMVrnPu6eyNRpK3ll6vYDGWMvMKgPAX8GBo1jFOn6951cGLVemvtx8Ja1x7IqiQDiKiGAv1z7jwb7_AfHprx4Y8MlHdeQ4v1uKVyHF0jb5F8ITZmTxs0W8e9eWc_iWQdqW5NGPvSPCycX6Wy4NswY84_wQRXccsxcXroJZU_FYogPgsmWxqfShyrjcsLk1zA8eV51dN4rabDSQCnfCl1I68Yb0nCTiDlLcbSW2fmbvbRy3m9btf9YP8BDF_LbGHod_a35yTt8-YA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"rev\",\r\n    \"lastName\" : \"rev\",\r\n    \"email\": \"revanth54@gmail.com\",\r\n    \"role\" : \"TRUCKER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/carrier/add-user",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"carrier",
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJFUGEyZ0FqN0RGNjRhQVNaRG92ZjJDZ1h4aEhtMWN1bENnQ2RxSlYyXC82ST0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOGZjNDQxMy1jNTdiLTQ0YmYtOTJiNi1lNGVmNDMxM2VhZDEiLCJjb2duaXRvOmdyb3VwcyI6WyJDQVJSSUVSIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9aYk5PVmY2cVYiLCJjb2duaXRvOnVzZXJuYW1lIjoiYThmYzQ0MTMtYzU3Yi00NGJmLTkyYjYtZTRlZjQzMTNlYWQxIiwiZ2l2ZW5fbmFtZSI6InJldiIsIm9yaWdpbl9qdGkiOiI3ODMwMTQxMy1mZjQyLTQxYjgtOTcwMC0yNzg2NWE2Y2ViZmEiLCJhdWQiOiIzaDNxYW1xaXBqYjllaWRlZG5vYnQxMXNubCIsImV2ZW50X2lkIjoiMDdkNjgwNDMtOTdlNS00OGY5LWExNWYtMmYwZDcwZDQyYjU5IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODczMTcxODIsImV4cCI6MTY4NzMyMDc4MiwiaWF0IjoxNjg3MzE3MTgyLCJmYW1pbHlfbmFtZSI6InJldiIsImp0aSI6ImE2YzMwMjZjLTI4YmYtNGRkNi04NWE3LTc4NzM2NjNmZTkzNCIsImVtYWlsIjoicmV2YW50aEB0cnVja3l1LmNvbSJ9.nj44qsnEJA2mi99T5dsDp_fKBWy8dYzPzBR8QSZ8h7Ddahm7TRt-KMly7NkSYk618ynG5Ibnt52WvKkAo3aWL9xSZF7Yp3AysH0Y69jzWOReCwTqhqDY-LD8ojFuVsa3l8_qwQX5IZV-bTgjPeVDYjJLbc04Yiz989IFStG9a-8bhBipH5tF6i8XrS3gqLLVeBVfaGcNW4xyfURPxIcIojLLOGxRB8XE2MJQeZXVy7PT9Q_8eIlaX29SMRTuO18v056uhLFpAADmbAV7jT3knZKxuavPDxHhoBUFwXyqXQcA6YOoKEQzYTSHyvJaI5h0tczhRcLTjZTaHoNY-fznPg",
+						"type": "text"
+					},
+					{
+						"key": "accessToken",
+						"value": "eyJraWQiOiJRRk5QN1krMWdTM24wSjlcL1lldmI4SlkwdnppalBFemVzK1ZLU0VZaW00Zz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOGZjNDQxMy1jNTdiLTQ0YmYtOTJiNi1lNGVmNDMxM2VhZDEiLCJjb2duaXRvOmdyb3VwcyI6WyJDQVJSSUVSIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX1piTk9WZjZxViIsImNsaWVudF9pZCI6IjNoM3FhbXFpcGpiOWVpZGVkbm9idDExc25sIiwib3JpZ2luX2p0aSI6Ijc4MzAxNDEzLWZmNDItNDFiOC05NzAwLTI3ODY1YTZjZWJmYSIsImV2ZW50X2lkIjoiMDdkNjgwNDMtOTdlNS00OGY5LWExNWYtMmYwZDcwZDQyYjU5IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY4NzMxNzE4MiwiZXhwIjoxNjg3MzIwNzgyLCJpYXQiOjE2ODczMTcxODIsImp0aSI6IjhlOTVmYjNhLWExYmEtNGU1Zi04MzIzLTE5ZGE0MGM3ZTI0YyIsInVzZXJuYW1lIjoiYThmYzQ0MTMtYzU3Yi00NGJmLTkyYjYtZTRlZjQzMTNlYWQxIn0.YhvJq5EEWD1ChzMsqryP7f2hhMMpPobskqcTEDywXB-llvHamHwO7IckLwHGHwmiXbtYYkbnIYRee8DEqKa7sT-0x8gFTq9OUGxXa1Im8L7wE90ZS3Dm40t6YL9J4_NZ9jL6i121MYzth-xtrv7r68-jciUJl1RuK5zTAe7GJpYJCeuQtHc_KJwOAeGYUFa6ZtGBX9jRhJk0G7n743rPpApTfhTIGjTTXrAT4tB5fRS3HqCTrz79QhGU0d2K2PRREyRRmuTWfiTLmL9T_hHkckWV6_bIMrSAeXcKWPmyySEUqF_XPjCe12ImBb4DvDgSgmBG9ggQJhw15v9JJPndug",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"rev\",\r\n    \"lastName\": \"rev\",\r\n    \"email\": \"revanth54@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/dev/api/user/add-user",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dev",
+						"api",
+						"user",
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://hja3suz7l3.execute-api.us-east-1.amazonaws.com",
+			"type": "string"
+		}
+	]
+}
